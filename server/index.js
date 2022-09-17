@@ -3,6 +3,8 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 
+import studentRoutes from "./routes/student.js";
+
 const app = express();
 
 app.use(bodyParser.json({ limit: "20mb", extended: true }));
